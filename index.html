@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>Formulario de Google</title>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
+<head>
+    <title>Consultora de Informática</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeQUHxjc9tMrrofGivkkzbMe7LlYS4Dsv1TmJ_P5t9bT73qoQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0" title="Formulario de Google"></iframe>
-			</div>
-		</div>
-	</div>
-	<script> src="script.js"</script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Consultora de Informática</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="#">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Aplicaciones</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Webs</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Feedback</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#formulario">Contacto</a> </li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h1>Bienvenidos a nuestra consultora de informática</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus tellus id dolor sollicitudin, eu ornare urna consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis faucibus elit, vel luctus mauris sagittis et.</p>
+            </div>
+        </section>
+        <section id="aplicaciones">
+            <div class="container">
+                <h2>Aplicaciones desarrolladas por nuestra consultora</h2>
+                <ul>
+                    <li>Aplicación 1</li>
+                    <li>Aplicación 2</li>
+                    <li>Aplicación 3</li>
+                </ul>
+            </div>
+        </section>
+        <section id="webs">
+            <div class="container">
+                <h2>Webs desarrolladas por nuestra consultora</h2>
+                <ul>
+                    <li>Web 1</li>
+                    <li>Web 2</li>
+                    <li>Web 3</li>
+                </ul>
+            </div>
+        </section>
+        <section id="feedback">
+            <div class="container">
+                <h2>Feedback de nuestros clientes</h2>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fauc us tellus id dolor sollicitudin, eu ornare urna consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis faucibus elit, vel luctus mauris sagittis et.</p>
+                    <footer>- Cliente satisfecho</footer>
+                </blockquote>
+                <blockquote>
+                    <p>Nullam faucibus tellus id dolor sollicitudin, eu ornare urna consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis faucibus elit, vel luctus mauris sagittis et.</p>
+                    <footer>- Cliente satisfecho</footer>
+                </blockquote>
+            </div>
+        </section>
+        <section id="formulario">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <p>Si estás interesado en nuestros servicios o tienes alguna consulta, déjanos tus datos y nos pondremos en contacto contigo a la brevedad.</p> <button type="button" class="btn btn-primary" id="mostrar-formulario">Abrir formulario de contacto</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Derechos reservados Consultora de Informática © 2023</p>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
