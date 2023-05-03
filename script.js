@@ -1,42 +1,15 @@
-$(document).ready(function() {
-    // Cambiar la fuente a Montserrat
-    $("body").css("font-family", "Montserrat, sans-serif");
-  
-    // Cambiar el color de fondo
-    $("body").css("background-color", "#f5e5d8");
-  
-    // Cambiar los estilos de los botones
-    $('iframe').contents().find('.goog-inline-block, .quantumWizButtonPaperbuttonContent, .quantumWizButtonPaperbuttonFocusOverlay').css({
-      "border-radius": "30px",
-      "border": "none",
-      "box-shadow": "none",
-      "font-weight": "500",
-      "font-size": "16px",
-      "padding": "12px 32px",
-      "margin": "16px",
-      "cursor": "pointer",
-      "transition": "background-color 0.2s"
-    });
-  
-    $('iframe').contents().find('.goog-inline-block:hover, .quantumWizButtonPaperbuttonContent:hover, .quantumWizButtonPaperbuttonFocusOverlay:hover').css({
-      "background-color": "#fff",
-      "color": "#000"
-    });
-  
-    // Esperar a que el iframe cargue
-    $('#google-form').on('load', function() {
-      // Cambiar el estilo del iframe
-      $(this).css({
-        "border": "none",
-        "border-radius": "8px",
-        "box-shadow": "0px 2px 20px rgba(0, 0, 0, 0.15)",
-        "overflow": "hidden",
-        "margin-top": "50px",
-        "margin-bottom": "50px",
-        "width": "100%",
-        "height": "calc(100vh - 150px)" // ajustar a la altura de tu encabezado y pie de página
-
-    });
+// abre el formulario de Google al hacer clic en el botón "Contáctanos"
+document.getElementById("mostrar-formulario").addEventListener("click", function(){
+  document.getElementById("formulario").innerHTML='<iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeQUHxjc9tMrrofGivkkzbMe7LlYS4Dsv1TmJ_P5t9bT73qoQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0" title="Formulario de Google"></iframe>';
 });
-})
 
+// efecto para el navbar al desplazarse por la página
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbarNav").style.backgroundColor = "#f8f9fa";
+  } else {
+    document.getElementById("navbarNav").style.backgroundColor = "transparent";
+  }
+}
